@@ -1,6 +1,7 @@
 name: Docker Image CI for GHCR
 
-on: push:
+on: 
+    push:
         branches:
             - main        
     workflow_dispatch:    
@@ -27,4 +28,4 @@ jobs:
               uses: docker/build-push-action@v5
               with:
                   push: true
-                  tags: ghcr.io/milanvives/containerizedapp:latest
+                  tags: ghcr.io/milanvives/helloworldapp:latest
